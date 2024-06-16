@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Information Form</title>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(192, 143, 177);
+        font-family: sans-serif;
+        border-radius: 25px;
+        box-shadow: 2px 2px 5px rgb(25, 23, 27);
+        margin-left: 400px;
+        margin-top: 100px;
+        margin-right: 550px;
+        height: 300px;
+        width: 500px;
+        padding: 50px;
+    }
+   button{
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left:60px ;
+  
+    }
+</style>
+</head>
+<body>
+
+<h2>User Information Form</h2>
+
+<form action="/submit-form" method="post">
+  
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br><br>
+  
+  <form>
+  <label>Gender:</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+  </gender>
+  
+  <label for="country">Country:</label>
+  <select id="country" name="country">
+    <option value="India">India</option>
+    <option value="Usa">USA</option>
+    <option value="Country">Canada</option>
+    <option value="UK">UK</option>
+    <option value="Australia">Australia</option>
+    <option value="Germany">Germany</option>
+  </select><br><br>
+  <button>Submit</button>
+</form>
+
+</body>
+</html>
